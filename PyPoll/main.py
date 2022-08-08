@@ -25,16 +25,6 @@ total_votes = len(votes)
 print(total_votes)
 print(voters_dict)
 
-# Election Results
-# -------------------------
-# Total Votes: 369711
-# -------------------------
-# Charles Casper Stockham: 23.049% (85213)
-# Diana DeGette: 73.812% (272892)
-# Raymon Anthony Doane: 3.139% (11606)
-# -------------------------
-# Winner: Diana DeGette
-# -------------------------    
 
 with open("analysis/analysis_result.txt", "w") as out:
     print("Election Results\n")
@@ -57,14 +47,3 @@ with open("analysis/analysis_result.txt", "w") as out:
     out.write("----------------------------\n")
     out.write("Winner: "+ winner + "\n")
     out.write("----------------------------\n")
-
-
-    # for i in voters_dict.keys():
-    #     out.write(i )
-
-    # out.write(f"Total Months:  {totalmonth}\n")
-    # out.write(f"Total:  ${total_profit}\n")
-    # out.write(f"Average Change:  ${(round(sum(PL_set)/ len(PL_set),2))}\n")
-    # out.write(f"Greatest Increase in Profits:  {In_Month} (${Increase})\n")
-#     # out.write(f"Greatest Decrease in Losses:  {De_Month} (${Decrease})\n")
-
